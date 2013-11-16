@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+   
+    <html>
+    <head>
+    <title>Countdown</title>
+    <div class = "timer",style="position: fixed; top: 62px; right: 2px; width: 80px; height: 150px; border-radius: 15px;">
+
+    <script type="text/javascript">
+    // set minutes
+    var mins = 1 ;
+     
+    // calculate the seconds (don't change this! unless time progresses at a different speed for you...)
+    var secs = mins * 10;
+    
+    function countdown() {
+    setTimeout('Decrement()',1000);
+    }
+    function Decrement() {
+    if (document.getElementById) {
+    minutes = document.getElementById("minutes");
+    seconds = document.getElementById("seconds");
+    // if less than a minute remaining
+    if (seconds < 59) {
+    seconds.value = secs;
+    } else {
+    minutes.value = getminutes();
+    seconds.value = getseconds();
+    }
+    secs--;
+    setTimeout('Decrement()',1000);
+    }
+    }
+    
+    
+    
+
+    function getminutes() {
+    // minutes is seconds divided by 60, rounded down
+    mins = Math.floor(secs / 60);
+    
+    if(mins==0 && secs==0)
+    {
+  
+     dosubmit();
+    
+                
+   }   
+    return mins;
+    }
+    function getseconds() {
+    // take mins remaining (as seconds) away from total seconds remaining
+    return secs-Math.round(mins *60);
+    }
+      </script>
+    <script language="Javascript">
+      function dosubmit() {
+      alert("your exam is submitted now")
+
+//asubmit is the name of the SUBMIT button in the form
+document.forms[0].submit();
+
+               }
+
+    </script>  
+    
+    
+    </head>
+
+ <body>
+    <div id="timer">
+    This is only valid for the next <input id="minutes" type="text" style="width: 14px; border: none; background-color:none; font-size: 16px; font-weight: bold;"> minutes and <input id="seconds" type="text" style="width: 26px; border: none; background-color:none; font-size: 16px; font-weight: bold;"> seconds.
+    </div>
+ </body>   
+    
+   
+   
+   <script>
+    countdown();
+   </script> 
+   
+  
+  <%= yield %>
+  
+
+</html>

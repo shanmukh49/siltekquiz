@@ -1,0 +1,21 @@
+<h1>exam results</h1>
+
+<table >
+
+  <tr>
+    <th>email</th>
+    <th>score</th>
+    
+  </tr>
+
+
+<% Exam.all.each do |result| %>
+<tr>  
+<%= result.id %>
+  <td><%= result.email %></td>
+<td><%= result.score %></td>
+</tr>
+<% end %>
+
+</table>
+

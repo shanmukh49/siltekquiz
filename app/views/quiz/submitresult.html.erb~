@@ -1,0 +1,8 @@
+
+
+
+<h1>Quiz Results</h1>
+<p id="question">You answered correctly <%= @correct %> out of <%= @total %> questions.</p>
+
+<p id="score">YOU HAVE SCORED <%= @correct %> MARKS !</p>
+

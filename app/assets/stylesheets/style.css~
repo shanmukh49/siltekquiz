@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	
+	background-color:#dbf0fa;
+	
+}
+
+*{margin:0px;
+padding:0px;
+}
+
+.header_container {
+	/* For WebKit (Safari, Google Chrome etc) */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3399cc), to(#66ccff));
+	/* For Mozilla/Gecko (Firefox etc) */
+	background: -moz-linear-gradient(top, #3399cc, #66ccff);
+	/* Opera 11.10+ */
+    background-image: -o-linear-gradient(top, #3399cc, #66ccff);
+
+		/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3399cc, endColorstr=#66ccff);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#3399cc, endColorstr=#66ccff)";
+	height: 135px;
+	position: relative;
+	border-bottom:solid 1px #0099CC;
+}
+.actual_header {
+	height: 135px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.sub_header {
+	height: 100px;
+	width: 900px;
+}
+.com_name {
+	float: left;
+	height: 100px;
+	width: 600px;
+	line-height: 98px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	color: #FFFFFF;
+}
+.logout_btn {
+	float: right;
+	height: 100px;
+	width: 300px;
+}
+.admin_txt {
+	float: left;
+	height: 100px;
+	width: 200px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: right;
+	line-height: 98px;
+	color: #FFFFFF;
+}
+
+.btn_log {
+	height: 30px;
+	width: 90px;
+	float: right;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.actual_logbtn {
+	background-color: #0099CC;
+	height: 28px;
+	width: 88px;
+	border: 1px solid #2789ba;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 26px;
+	font-weight: bold;
+	text-align: center;
+	border-radius:4px;
+}
+.actual_logbtn ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+} 
+
+.actual_logbtn li {
+margin: 0px 0 0;
+} 
+
+.actual_logbtn a {
+display: block;
+border-radius:4px;
+height: 28px;
+width: 88px;
+text-decoration: none; /*lets remove the link underlines*/
+} 
+
+.actual_logbtn a:link, .actual_logbtn a:active, .actual_logbtn a:visited {
+color: #FFFFFF;
+}
+
+.actual_logbtn a:hover {
+background-color:#50b4e6;
+color: #FFFFFF;
+}.menuscontainer {
+	height: 35px;
+	width: 900px;
+}
+.menu_btn {
+	background-color: #0099CC;
+	float: left;
+	height: 35px;
+	width: 120px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 33px;
+	text-align: center;
+	border-top-right-radius:6px;
+	border-top-left-radius:6px;
+	margin-right: 1px;
+	
+}
+.menu_btn ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+} 
+
+.menu_btn li {
+margin: 0px 0 0;
+} 
+
+.menu_btn a {
+display: block;
+border-top-right-radius:6px;
+border-top-left-radius:6px;
+height: 35px;
+width: 120px;
+text-decoration: none; /*lets remove the link underlines*/
+} 
+
+.menu_btn a:link, .menu_btn a:active, .menu_btn a:visited {
+color: #FFFFFF;
+}
+
+.menu_btn a:hover {
+background-color:#2c7fa9;
+color: #FFFFFF;
+}
+.content_container {
+	height: 550px;
+	width: 878px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 12px;
+	border: 1px solid #0099CC;
+	border-radius:4px;
+	margin-bottom: 12px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 20px;
+	background-color: #FFFFFF;
+}
+.text_div {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	padding-bottom: 12px;
+	overflow: hidden;
+	margin-top: 15px;
+}
+
+.footer_cntnr {
+	background-color: #0099CC;
+	height: 60px;
+        width: 900px;
+	position: relative;
+       
+}
+#hdng {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#0099CC;
+}
+.footer {
+	height: 60px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 58px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.footer ul{
+	list-style-type:none;
+}
+
+.footer ul li{
+	display:inline;
+}
+
+.footer ul li a{
+	text-decoration:underline;
+	color:#FFFFFF;
+}
+
+.footer ul li a:hover{
+	text-decoration:none;
+	color:#006699;
+}
+.left_right_cntnr {
+	width: 878px;
+	height: 40px;
+}
+
+.left_txt {
+	width:158px;
+	float:left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.right_field {
+	width:720px;
+	float:right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.username {
+	height:23px;
+	width:225px;
+	border:solid 1px #0099CC;
+}
+.link_tag {
+font-size:13px;
+color:#006699;
+text-decoration:none;
+}
