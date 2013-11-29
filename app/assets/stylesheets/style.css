@@ -4,7 +4,7 @@
 body {
 	
 	background-color:#6BDA6B;
-	background-image:url('bg.jpg');
+	background-image:url('bgb.jpg');
 	background-repeat: no-repeat;
 	background-size:100%;
 }
@@ -20,7 +20,7 @@ font-family: "Times New Roman",Georgia,Serif;
 	/* For WebKit (Safari, Google Chrome etc) */
 	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFFFFF));
 	/* For Mozilla/Gecko (Firefox etc) */
-	background: -moz-linear-gradient(top, #FFFFFF, #FFFFFF);
+	/*background: -moz-linear-gradient(top, #FFFFFF, #FFFFFF);*/
 	/* Opera 11.10+ */
     background-image: -o-linear-gradient(top, #3399cc, #66ccff);
 
@@ -30,7 +30,7 @@ font-family: "Times New Roman",Georgia,Serif;
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#3399cc, endColorstr=#66ccff)";
 	height: 110px;
 	position: relative;
-	border-bottom:solid 1px #0099CC;
+	/*border-bottom:solid 1px #0099CC;*/
 }
 .actual_header {
 	height: 135px;
