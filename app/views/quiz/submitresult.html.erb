@@ -1,9 +1,10 @@
 
 
-
+<div class="letter">
 <h1>Quiz Results</h1>
 <p id="question">You answered correctly <%= @correct %> out of <%= @total %> questions.</p>
 
 <p id="score">YOU HAVE SCORED <%= @correct %> MARKS !</p>
-<p id="time">your time <%= @current_user.time %> </p>
+<p id="time">your time <%= Time.at(180-@current_user.time).utc.strftime("%M:%S") %>  </p>
 
+</div>

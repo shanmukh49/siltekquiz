@@ -9,10 +9,10 @@
      
 
     <div id="timer">
-    Exam time ends <input id="minutes" type="text" style="width: 16px; border: none; background-color:none; font-size: 14px; font-weight: bold;">minutes: <input id="seconds" type="text" style="width: 26px; border: none; background-color:none; font-size: 14px; font-weight: bold;"> seconds </div>
-</div>    
+    <input id="minutes" type="text" style="width: 25px; border: none; background-color:none; font-size: 14px; font-weight: bold;"> : <input id="seconds" type="text" style="width: 26px; border: none; background-color:none; font-size: 14px; font-weight: bold;">  </div>
+</div></br>    
     
-
+<div class ="content_container">
 
 <h1>Question <%= @current + 1 %> of <%= @total %></h1>
 <p id="question"><%= @question.text %></p>
@@ -107,15 +107,15 @@ window.location="/quiz/end"
 
     </script>
   <% @choices.each do |choice| %>
-	 <p class="choice">
-		<%= radio_button_tag(:choice, choice.id) %>
-		<%= label_tag("choice_".concat(choice.id.to_s).to_sym, choice.text) %>
-	 </p>
+   <p class="choice">
+    <%= radio_button_tag(:choice, choice.id) %>
+    <%= label_tag("choice_".concat(choice.id.to_s).to_sym, choice.text) %>
+   </p>
   <% end %>
   
-  <div class="center">
-	 <%= submit_tag("Continue", :class => "submit") %>
-  </div>
+  <div class="center" style="text-align:center;">
+   <%= submit_tag("Continue", :class => "actual_logbtn") %>
+  </div></br>
 <% end %>
 <script>
     countdown();
@@ -124,7 +124,7 @@ window.location="/quiz/end"
   Question <%= @current + 1 %> of <%= @total %>
 <% end %>
 
-
+</div>
 
 </div>
 

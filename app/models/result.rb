@@ -1,6 +1,6 @@
 class Result < ActiveRecord::Base
   # attr_accessible :title, :body
-attr_accessible :u_email,:score,:question_id,:user_id,:u_time
+attr_accessible :u_email,:score,:question_id,:user_id,:u_time,:u_name
   has_many :questions, :through=>:user_answers
   has_many :user_answers
   belongs_to :user
@@ -13,6 +13,9 @@ attr_accessible :u_email,:score,:question_id,:user_id,:u_time
   end
   def u_time
   	(self.user).time
+  end
+  def u_name
+    (self.user).first_name
   end
   
 end

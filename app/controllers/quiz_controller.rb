@@ -69,8 +69,8 @@ total = 3
 	 else
 		@correct = false
 	 end
-#   puts "=================="
-#puts params[:time]
+   puts "=======iam in answer time inspect ==========="
+puts params[:time].inspect
     current_user.time=params[:time]
     current_user.save
 	 session[:current] += 1
@@ -87,13 +87,17 @@ total = 3
   
   
   def submitresult
+  	puts "//////////////////hi//////////////////////////////"
+  	time_taken = 180 - current_user.time.to_i
     if (current_user.result).nil?
     @addresult = Result.new 
      @correct = session[:correct]
     @addresult.score=@correct
   @total   = session[:total]
     @addresult.user_id = current_user.id
+    @addresult.first_name = current_user.first_name
     @addresult.email = current_user.email
+    @addresult.time = time_taken
     @addresult.save
     else
       render :text=>"you have already submitted exam", :layout=>true

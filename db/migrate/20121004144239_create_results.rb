@@ -3,7 +3,7 @@ class CreateResults < ActiveRecord::Migration
     create_table :results, {:id => false} do |t| 
       t.string :email
       t.integer :score
-      t.integer :time
+      #t.integer :time
     end
   end
 end

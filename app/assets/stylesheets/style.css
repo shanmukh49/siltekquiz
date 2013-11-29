@@ -3,17 +3,22 @@
 
 body {
 	
-	background-color:#dbf0fa;
-	
+	background-color:#6BDA6B;
+	background-image:url('bg.jpg');
+	background-repeat: no-repeat;
+	background-size:100%;
 }
 
-*{margin:0px;
+*{/*margin:0px;*/
 padding:0px;
+
+text-align:justify;
+font-family: "Times New Roman",Georgia,Serif;
 }
 
 .header_container {
 	/* For WebKit (Safari, Google Chrome etc) */
-	background: -webkit-gradient(linear, left top, left bottom, from(#3399cc), to(#66ccff));
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFFFFF));
 	/* For Mozilla/Gecko (Firefox etc) */
 	background: -moz-linear-gradient(top, #FFFFFF, #FFFFFF);
 	/* Opera 11.10+ */
@@ -37,6 +42,10 @@ padding:0px;
 .sub_header {
 	height: 100px;
 	width: 900px;
+}
+.timer
+{
+	float: right;
 }
 .com_name {
 	/*float: left;
@@ -115,6 +124,7 @@ text-decoration: none; /*lets remove the link underlines*/
 
 .actual_logbtn a:link, .actual_logbtn a:active, .actual_logbtn a:visited {
 color: #FFFFFF;
+text-align: center;
 }
 
 .actual_logbtn a:hover {
@@ -198,6 +208,10 @@ color: #FFFFFF;
 	padding-left: 20px;
 	background-color: #FFFFFF;
 }
+.letter
+{
+	font-family:"Times New Roman", Times, serif;
+}
 .text_div {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
@@ -208,10 +222,11 @@ color: #FFFFFF;
 }
 
 .footer_cntnr {
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 	height: 60px;
-        width: 900px;
+        /*width: 900px;*/
 	position: relative;
+	/*text-align: center;*/
        
 }
 #hdng {
@@ -234,6 +249,7 @@ color: #FFFFFF;
 
 .footer ul{
 	list-style-type:none;
+     text-align: center;
 }
 
 .footer ul li{
