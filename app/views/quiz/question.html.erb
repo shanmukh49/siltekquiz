@@ -15,7 +15,10 @@
 <div class ="content_container">
 
 <h1>Question <%= @current + 1 %> of <%= @total %></h1>
-<p id="question"><%= @question.text %></p>
+<!-- <p id="question"> -->
+  <% @question.text.split("\n").each do |t| %>
+  <%= t %><br>
+<% end %>
 
 <%= form_tag({:controller => "quiz", :action => "answer"}) do %>
 <%#=current_user.time%>

@@ -2,10 +2,12 @@
 
 <p id="notice"><%= notice %></p>
 
-<p>
+
   <b>Text:</b>
-  <%= @question.text %>
-</p>
+  <% @question.text.split("\n").each do |t| %>
+  <%= t %><br>
+<% end %>
+
 
 <h4>Choices</h4>
 <ul>
