@@ -6,7 +6,7 @@ body {
 	/*background-color:#6BDA6B;*/
 	background-image:url('bgb.jpg');
 	background-repeat: no-repeat;
-	background-size:100%;
+	/*background-size:100%;*/
 }
 
 *{/*margin:0px;*/
@@ -189,7 +189,7 @@ color: #FFFFFF;
 	padding-top: 10px;
 	padding-right: 10px;
 	padding-left: 20px;
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 
 }
 .content_container {
@@ -206,7 +206,7 @@ color: #FFFFFF;
 	padding-top: 10px;
 	padding-right: 10px;
 	padding-left: 20px;
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 }
 .letter
 {
