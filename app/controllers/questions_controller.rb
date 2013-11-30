@@ -3,7 +3,7 @@
 class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.xml
-before_filter :authenticate_user!
+# before_filter :authenticate_user!
   def index
     @questions = Question.all
     @questions.sort! {|a,b| a.text <=> b.text}

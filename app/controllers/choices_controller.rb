@@ -4,7 +4,7 @@
 # Author::    1165536 Juliana Pena
 
 class ChoicesController < ApplicationController
-  before_filter :authenticate_user!
+  # before_filter :authenticate_user!
   def create
 	 @question = Question.find(params[:question])
 	 text = params[:text]
