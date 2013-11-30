@@ -17,6 +17,25 @@ class ChoicesController < ApplicationController
 	 
 	 redirect_to question_path(@question)
   end
+
+  def edit
+    @question = Question.find(params[:question])
+	 @choice = Choice.find(params[:choice])
+  end
+
+  # def update
+  #   @question = Question.find(params[:id])
+
+  #   respond_to do |format|
+  #     if @question.update_attributes(params[:question])
+  #       format.html { redirect_to(@question, :notice => 'Question was successfully updated.') }
+  #       format.xml  { head :ok }
+  #     else
+  #       format.html { render :action => "edit" }
+  #       format.xml  { render :xml => @question.errors, :status => :unprocessable_entity }
+  #     end
+  #   end
+  # end
   
   def destroy
 	 @question = Question.find(params[:question])
