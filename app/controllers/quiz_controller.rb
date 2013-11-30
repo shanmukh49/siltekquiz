@@ -5,7 +5,7 @@ class QuizController < ApplicationController
   def index
 
   if current_user.result.nil?
-total = 3
+total = 25
 @id = current_user.subject_id
  all = Question.where(subject_id: @id)
  session[:questions] = all.sort_by{rand}[0..(total-1)]
