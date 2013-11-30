@@ -1,4 +1,4 @@
-
+ 
 
 class QuizController < ApplicationController
   before_filter :authenticate_user!
@@ -43,8 +43,8 @@ total = 3
 	 @question = Question.find(session[:questions][@current])
 
 
-	 @choices = @question.choices.sort_by{rand}
-	 
+	 # @choices = @question.choices.sort_by{rand}
+	 @choices = @question.choices
 	 
 	 session[:question] = @question
 	 session[:choices] = @choices
