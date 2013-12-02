@@ -5,6 +5,6 @@
 <p id="question">You answered correctly <%= @correct %> out of <%= @total %> questions.</p>
 
 <p id="score">YOU HAVE SCORED <%= @correct %> MARKS !</p>
-<p id="time">your time <%= Time.at(180-@current_user.time).utc.strftime("%M:%S") %>  </p>
+<p id="time">your time <%= Time.at(1500-@current_user.time).utc.strftime("%M:%S") %>  </p>
 
 </div>

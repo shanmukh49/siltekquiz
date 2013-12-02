@@ -88,7 +88,7 @@ puts params[:time].inspect
   
   def submitresult
   	puts "//////////////////hi//////////////////////////////"
-  	time_taken = 180 - current_user.time.to_i
+  	time_taken = 1500 - current_user.time.to_i
     if (current_user.result).nil?
     @addresult = Result.new 
      @correct = session[:correct]
