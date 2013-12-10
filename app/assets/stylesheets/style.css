@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]--> 
+
 body {
 	
 	/*background-color:#6BDA6B;*/
@@ -18,9 +16,7 @@ text-align:justify;
 font-family: "Times New Roman",Georgia,Serif;
 }
 
-header, nav, section, article, aside, footer {
-   display:block;
-}
+
 
 .header_container {
 	/* For WebKit (Safari, Google Chrome etc) */
