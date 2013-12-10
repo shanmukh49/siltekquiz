@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
 body {
 	
 	/*background-color:#6BDA6B;*/
@@ -14,6 +16,10 @@ padding:0px;
 
 text-align:justify;
 font-family: "Times New Roman",Georgia,Serif;
+}
+
+header, nav, section, article, aside, footer {
+   display:block;
 }
 
 .header_container {
@@ -307,4 +313,9 @@ text-decoration:none;
 tr.spaceUnder > td
 {
   padding-bottom: 5em;
+}
+
+#error_explanation
+{
+	color:#FF0000;
 }
