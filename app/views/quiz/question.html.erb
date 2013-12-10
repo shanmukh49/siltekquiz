@@ -1,17 +1,18 @@
 
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<%= javascript_include_tag "window_close_event" %>
+<%= javascript_include_tag "copy_disabled" %>
+
 <div class = "main">
 <div class ="timer">
-    
    
-  
-
-     
 
     <div id="timer">
     <input id="minutes" type="text" style="width: 25px; border: none; background-color:none; font-size: 14px; font-weight: bold;"> : <input id="seconds" type="text" style="width: 26px; border: none; background-color:none; font-size: 14px; font-weight: bold;">  </div>
 </div></br>    
-    
+    <h3>Hello&nbsp;&nbsp;<%= current_user.first_name %></h3>
+
 <div class ="content_container">
 
 <h1>Question <%= @current + 1 %> of <%= @total %></h1>
@@ -109,6 +110,7 @@ window.location="/quiz/end"
                }
 
     </script>
+   
   <% @choices.each do |choice| %>
    <p class="choice">
     <%= radio_button_tag(:choice, choice.id) %>
@@ -130,4 +132,6 @@ window.location="/quiz/end"
 </div>
 
 </div>
+<SCRIPT TYPE="text/javascript"> 
 
+</SCRIPT> 

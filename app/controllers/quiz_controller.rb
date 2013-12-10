@@ -84,7 +84,9 @@ puts params[:time].inspect
 	 
 	 @score = @correct 
   end
-  
+  def instruction
+  	
+  end
   
   def submitresult
   	puts "//////////////////hi//////////////////////////////"

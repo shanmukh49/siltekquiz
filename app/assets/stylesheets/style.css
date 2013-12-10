@@ -47,6 +47,10 @@ font-family: "Times New Roman",Georgia,Serif;
 {
 	float: right;
 }
+.start
+{
+ margin-left: 180px;
+}
 .com_name {
 	/*float: left;
 	height: 100px;
@@ -57,7 +61,7 @@ font-family: "Times New Roman",Georgia,Serif;
 	color: #FFFFFF;*/
 	 display: block;
     left: 2.73%;
-    margin-left: 200px;
+    margin-left: 180px;
     position: absolute;
     top: 12px;
     width: 249px;
@@ -183,7 +187,7 @@ color: #FFFFFF;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 12px;
-	border: 1px solid #0099CC;
+	border: 2px solid #5EAC1A;
 	border-radius:4px;
 	margin-bottom: 12px;
 	padding-top: 10px;
@@ -200,7 +204,7 @@ color: #FFFFFF;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 40px;
-	border: 1px solid #0099CC;
+	border: 1px solid #5EAC1A;
 	border-radius:4px;
 	margin-bottom: 40px;
 	padding-top: 10px;
