@@ -7,7 +7,7 @@
   <% @question.text.split("\n").each do |t| %>
   <%= t %><br>
 <% end %>
-
+<%= image_tag @question.avatar.url(:original) %>
 
 <h4>Choices</h4>
 <ul>

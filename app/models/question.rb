@@ -1,10 +1,12 @@
 
 class Question < ActiveRecord::Base
-  attr_accessible :text,:subject_id
+  attr_accessible :text,:subject_id,:avatar
   has_many :choices
   has_many :result, :through=>:user_answers
   has_one :user_answer
   belongs_to :subject
+has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+  
   #has_many :users, :through => :types
   #set_primary_key 'type'
   def answer

@@ -29,7 +29,7 @@ end
 group :production do
 	gem 'pg'
 end
-
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 
 gem "jquery-rails", "< 3.0.0"
