@@ -9,7 +9,7 @@ has_attached_file :avatar, styles: {
     thumb: '100x100>',
     square: '200x200#',
     medium: '300x300>'
-  }
+  },:default_url => "/images/:style/?.png"
   
   #has_many :users, :through => :types
   #set_primary_key 'type'
