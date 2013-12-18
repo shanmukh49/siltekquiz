@@ -4,8 +4,8 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-# validates_presence_of :mobile_no, :first_name, :school_name
-# validates_length_of :mobile_no, :minimum => 10, :maximum => 10, :allow_blank => true
+validates_presence_of :mobile_no, :first_name, :school_name
+validates_length_of :mobile_no, :minimum => 10, :maximum => 10, :allow_blank => true
 
 
   # Setup accessible (or protected) attributes for your model
