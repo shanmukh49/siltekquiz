@@ -7,8 +7,8 @@
   <% @question.text.split("\n").each do |t| %>
   <%= t %><br>
 <% end %>
-<%= image_tag @question.avatar.url(:original) %>
-
+<%#= image_tag @question.avatar.url(:original) %>
+<%= link_to(image_tag(@question.avatar.url(:original)), @question.avatar.url) if @question.avatar? %>
 <h4>Choices</h4>
 <ul>
   <% @question.choices.each do |choice| %>
