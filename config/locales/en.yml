@@ -3,7 +3,3 @@
 
 en:
   hello: "Hello world"
-  errors:
-    messages:
-      blank: "cannot be left blank"
-      
