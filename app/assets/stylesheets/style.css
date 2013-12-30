@@ -10,7 +10,7 @@ body {
 }
 
 *{/*margin:0px;*/
-padding:0px;
+/*padding:0px;*/
 
 text-align:justify;
 font-family: "Times New Roman",Georgia,Serif;
@@ -87,6 +87,12 @@ font-family: "Times New Roman",Georgia,Serif;
 	text-align: right;
 	line-height: 98px;
 	color: #FFFFFF;
+}
+
+#reset{
+
+	padding:10px;
+	padding-left:0px;
 }
 
 .btn_log {
@@ -211,9 +217,28 @@ color: #FFFFFF;
 	margin-bottom: 40px;
 	padding-top: 10px;
 	padding-right: 10px;
+	padding-left: 150px;
+	/*background-color: #FFFFFF;*/
+}
+
+
+.content_containers {
+	width: 500px;
+	 overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	border: 1px solid #5EAC1A;
+	border-radius:4px;
+	margin-bottom: 40px;
+	padding-top: 10px;
+	padding-right: 10px;
 	padding-left: 20px;
 	/*background-color: #FFFFFF;*/
 }
+
 .letter
 {
 	font-family:"Times New Roman", Times, serif;
@@ -314,4 +339,67 @@ tr.spaceUnder > td
 #error_explanation
 {
 	color:#FF0000;
+	float:right;
+	width:400px;
 }
+
+.controls{
+float: right;
+  /*width: 150px;*/
+  text-align: right;
+  margin: 2px 10px;
+
+}
+
+.select optional
+
+
+.simple_form label {
+  float: left;
+  /*width: 100px;*/
+  text-align: right;
+  margin: 2px 10px;
+}
+
+.simple_form div.input {
+  margin-bottom: 10px;
+}
+
+.simple_form div.boolean, .simple_form input[type='submit'] {
+  margin-left: 120px;
+}
+
+.simple_form div.boolean label, .simple_form label.collection_radio {
+  float: none;
+  margin: 0;
+}
+
+.simple_form label.collection_radio {
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.simple_form .error {
+  clear: left;
+  /*margin-left: 120px;
+  font-size: 12px;*/
+  color: #D00;
+  display: block;
+}
+
+.simple_form .hint {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #555;
+  display: block;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+

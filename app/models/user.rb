@@ -4,12 +4,12 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-validates_presence_of :mobile_no, :first_name, :school_name
-validates_length_of :mobile_no, :minimum => 10, :maximum => 10, :allow_blank => true
+validates_presence_of :first_name, :mobile_no,:email, :password, :last_name,:school_name,:subject_id
+validates_length_of :mobile_no, :minimum => 10, :maximum => 10, :allow_blank => true, message: "is too short (minimum is 10 numbers)"
 
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name, :last_name, :subject_id,:school_name, :mobile_no,:time
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name, :last_name, :subject_id,:subject,:school_name, :mobile_no,:time
   # attr_accessible :title, :body
   has_one :result
   # has_many :types

@@ -11,7 +11,7 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'activeadmin','0.5.0'
 gem "jquery-ui-rails"
-  
+  gem 'simple_form'
   gem "meta_search",    '>= 1.1.0.pre'
 
 
